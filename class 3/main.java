@@ -30,22 +30,28 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class main {
-    public static void main(String[] args)
-    {
-        Scanner scanner = new Scanner(System.in);
-        String name;
-        System.out.print("Enter your name: ");
-        name = scanner.nextLine();
-        System.out.println("Enter your age: ");
-        int age = scanner.nextInt();
-        System.out.print("Enter your percentage: ");
-        double perc = scanner.nextDouble();
-        System.out.println("Hello, " + name + "!");
-        System.out.println("You are " + age +  "years old.");
-        System.out.println("Your percentage is " + perc);
-        scanner.close();
+// public class main {
+//     public static void main(String[] args)
+//     {
+//         Scanner scanner = new Scanner(System.in);
+//         String name;
+//         System.out.print("Enter your name: ");
+//         name = scanner.nextLine();
+//         System.out.println("Enter your age: ");
+//         int age = scanner.nextInt();
+//         System.out.print("Enter your percentage: ");
+//         double perc = scanner.nextDouble();
+//         System.out.println("Hello, " + name + "!");
+//         System.out.println("You are " + age +  "years old.");
+//         System.out.println("Your percentage is " + perc);
+//         scanner.close();
+//     }
+// }
+public class main{
+    public static void main(String[] args) {
+        int a[]={56, 34, 89, 32};
+        System.out.println(a[2]);
     }
 }
