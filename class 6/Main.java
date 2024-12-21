@@ -59,22 +59,45 @@
 //     }
 // }
 
-class Superclass
-{
-    int number = 56;
-}
+// class Superclass
+// {
+//     int number = 56;
+// }
 
-class Subclass extends Superclass{
-    int number = 96;
-    void printNumber()
+// class Subclass extends Superclass{
+//     int number = 96;
+//     void printNumber()
+//     {
+//         System.out.println(super.number);
+//     }
+// }
+// class Main{
+//     public static void main(String args[])
+//     {
+//         Subclass sub = new Subclass();
+//         sub.printNumber();
+//     }
+// }
+
+class Parent{
+    protected void protect()
     {
-        System.out.println(super.number);
+        System.out.println("I am inside protected method");
     }
 }
-class Main{
-    public static void main(String args[])
+
+class child extends Parent{
+    private void privateMethod()
     {
-        Subclass sub = new Subclass();
-        sub.printNumber();
+        System.out.println("I am inside private method");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        child kid = new child();
+        kid.protect();
+        System.out.println("Hello world!");
+
     }
 }
